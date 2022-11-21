@@ -1,0 +1,42 @@
+.SmallBox {
+    background-color: blueviolet;
+    width: 100%;
+	max-width: 280px;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 5%;
+	margin: 6px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.computer:hover {
+    border: 5px solid chartreuse;  
+}
+
+
+.cellphone:hover {
+    border: 5px solid crimson;
+}
+.toothbrush:hover {
+    border: 5px solid #C8A2C8;
+}
+.bed:hover {
+    border: 5px solid lavender;
+}
+.water:hover {
+    border: 5px solid teal;
+}
+.towel:hover {
+    border: 5px solid violet;
+}
+.plate:hover {
+    border: 5px solid beige;
+}
+.sandals:hover {
+    border: 5px solid #FFFDD0;
+}
+
+.clothes:hover {
+    border: 5px solid #800020;
+}

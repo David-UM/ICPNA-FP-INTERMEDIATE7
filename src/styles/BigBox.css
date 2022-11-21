@@ -1,0 +1,14 @@
+.BigBox {
+    width: 90%;
+    max-width: 900px;
+    height: 910px;
+    background-color: aqua;
+    margin: 10px auto;
+    padding: 0px;
+    gap: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}

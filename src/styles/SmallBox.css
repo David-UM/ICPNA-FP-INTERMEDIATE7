@@ -6,37 +6,45 @@
 	object-fit: cover;
 	border-radius: 5%;
 	margin: 6px;
-    border: 2px solid;
+    border: 3px solid;
     cursor: pointer;
+    transition: all 1500ms ease-out;
 }
 
 .computer:hover {
-    border: 5px solid chartreuse;  
+    border: 5px solid #7fff00; 
+    transform: scale(1.05); 
 }
-
-
 .cellphone:hover {
-    border: 5px solid crimson;
+    border: 5px solid #dc143c;
+    transform: scale(1.05); 
 }
 .toothbrush:hover {
     border: 5px solid #C8A2C8;
+    transform: scale(1.05); 
 }
 .bed:hover {
-    border: 5px solid lavender;
+    border: 5px solid #e6e6fa;
+    transform: scale(1.05); 
 }
 .water:hover {
-    border: 5px solid teal;
+    border: 5px solid #008080;
+    transform: scale(1.05); 
 }
 .towel:hover {
-    border: 5px solid violet;
+    border: 5px solid #ee82ee;
+    transform: scale(1.05); 
 }
 .plate:hover {
-    border: 5px solid beige;
+    border: 5px solid #f5f5dc;
+    transform: scale(1.05);     
 }
 .sandals:hover {
-    border: 5px solid #FFFDD0;
+    border: 5px solid #25FCF7;
+    transform: scale(1.05); 
 }
 
 .clothes:hover {
     border: 5px solid #800020;
+    transform: scale(1.05); 
 }

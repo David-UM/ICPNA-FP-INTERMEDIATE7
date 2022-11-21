@@ -1,14 +1,19 @@
 .BigBox {
     width: 90%;
-    max-width: 900px;
-    height: 910px;
-    background-color: aqua;
-    margin: 10px auto;
-    padding: 0px;
+    max-width: 920px;
+    height: 900px;
+    background-color: black;
+    margin: 4% auto;
+    padding: 15px 0px;
     gap: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+    border-radius: 2%;
+}
+
+body {
+    transition: all 1500ms ease-out;
 }

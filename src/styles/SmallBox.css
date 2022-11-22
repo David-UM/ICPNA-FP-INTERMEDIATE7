@@ -112,3 +112,27 @@
     height: 100vh;
     z-index: 4;
 }
+
+.boton {
+    visibility: hidden;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 7;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 1000ms ease-out;
+}
+
+.boton:hover {
+    background-color: red;
+    color: white;
+}
+
+.show {
+    visibility: visible;
+}

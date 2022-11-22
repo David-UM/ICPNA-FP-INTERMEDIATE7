@@ -5,6 +5,7 @@ import './../styles/SmallBox.css';
 const SmallBox = ({ name, index, handleBG, estado }) => {
 	let [imgclass, setImgclass] = useState(`SmallBox ${name}`);
 	let [containerclass, setContainerclass] = useState(`SmallBox-container`);
+	let [buttonclass, setButtonclass] = useState(`boton`);
 
 	const handleOnClick = () => {
 		setImgclass((imgclass = `SmallBox ${name} grow`));
@@ -12,6 +13,7 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 		setContainerclass(
 			(containerclass = `SmallBox-container grow-container ${index}`)
 		);
+		setButtonclass((setButtonclass = `boton show`));
 	};
 
 	const handleColor = () => {
@@ -20,6 +22,13 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 
 	const makeWhite = () => {
 		handleBG((estado = `App BGwhite`));
+	};
+
+	const handleClose = () => {
+		setImgclass((imgclass = `SmallBox ${name}`));
+		handleBG((estado = `App`));
+		setContainerclass((containerclass = `SmallBox-container`));
+		setButtonclass((setButtonclass = `boton`));
 	};
 
 	return (
@@ -32,6 +41,9 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 				onMouseLeave={makeWhite}
 				onClick={handleOnClick}
 			/>
+			<button className={buttonclass} onClick={handleClose}>
+				X
+			</button>
 		</div>
 	);
 };

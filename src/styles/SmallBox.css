@@ -5,7 +5,6 @@
     display: flex;
 	width: 250px;
     height: 250px;
-    margin: 12px;
     transition: width, height 0.7s ease-out;
     position: static;
     

@@ -5,8 +5,13 @@
     align-items: center;
     transition: background-color 700ms ease-out;
     display: flex;
+    padding: 0 2rem;
 }
 
 .test {
     background-color: blue;
+}
+
+* {
+    box-sizing: border-box;
 }

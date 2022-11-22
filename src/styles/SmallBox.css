@@ -1,16 +1,27 @@
+.SmallBox-container {
+    padding: 0;
+    display: flex;
+	width: 250px;
+    height: 250px;
+    margin: 12px;
+    
+}
+
 .SmallBox {
     background-color: blueviolet;
-    width: 100%;
-	max-width: 280px;
-	height: 280px;
+	width: 100%;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 5%;
-	margin: 6px;
-    border: 3px solid;
+	border: 3px solid;
     cursor: pointer;
-    transition: all 1000ms ease-out;
-    box-shadow: 4px 0px 10px 0px #000;
+    transition: transform 500ms ease-out;
+    
+    object-fit: cover;
+    z-index: 1;
 }
+
+
 
 .computer:hover {
     border: 5px solid #7fff00; 
@@ -29,7 +40,7 @@
     transform: scale(1.05); 
 }
 .water:hover {
-    border: 5px solid #008080;
+    border: 5px solid #25FCF7;
     transform: scale(1.05); 
 }
 .towel:hover {
@@ -41,11 +52,20 @@
     transform: scale(1.05);     
 }
 .sandals:hover {
-    border: 5px solid #25FCF7;
+    border: 5px solid #008080;
     transform: scale(1.05); 
 }
 
 .clothes:hover {
     border: 5px solid #800020;
     transform: scale(1.05); 
+}
+
+.grow {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    max-width: 900px;
+    height: 90%;
+    z-index: 5;
 }

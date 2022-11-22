@@ -1,10 +1,9 @@
 .BigBox {
     width: 90%;
-    max-width: 920px;
-    height: 900px;
+    max-width: 850px;
+    height: 850px;
     background-color:azure;
-    margin: 4% auto;
-    padding: 15px 0px;
+    padding: 10px 0px;
     gap: 0px;
     display: flex;
     flex-direction: row;

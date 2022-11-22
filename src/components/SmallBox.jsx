@@ -5,7 +5,8 @@ import './../styles/SmallBox.css';
 const SmallBox = ({ name, index, handleBG, estado }) => {
 	let [imgclass, setImgclass] = useState(`SmallBox ${name}`);
 	let [containerclass, setContainerclass] = useState(`SmallBox-container`);
-	let [buttonclass, setButtonclass] = useState(`boton`);
+	let [buttonclass, setButtonclass] = useState(`boton hide`);
+	let [textclass, setTextclass] = useState(`text hide`);
 
 	const handleOnClick = () => {
 		setImgclass((imgclass = `SmallBox ${name} grow`));
@@ -13,7 +14,8 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 		setContainerclass(
 			(containerclass = `SmallBox-container grow-container ${index}`)
 		);
-		setButtonclass((setButtonclass = `boton show`));
+		setButtonclass((buttonclass = `boton show`));
+		setTextclass((textclass = `text show`));
 	};
 
 	const handleColor = () => {
@@ -28,7 +30,8 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 		setImgclass((imgclass = `SmallBox ${name}`));
 		handleBG((estado = `App`));
 		setContainerclass((containerclass = `SmallBox-container`));
-		setButtonclass((setButtonclass = `boton`));
+		setButtonclass((buttonclass = `boton hide`));
+		setTextclass((textclass = `text hide`));
 	};
 
 	return (
@@ -41,6 +44,7 @@ const SmallBox = ({ name, index, handleBG, estado }) => {
 				onMouseLeave={makeWhite}
 				onClick={handleOnClick}
 			/>
+			<span className={textclass}>{name.toUpperCase()}</span>
 			<button className={buttonclass} onClick={handleClose}>
 				X
 			</button>

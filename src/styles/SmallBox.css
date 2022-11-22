@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
 .SmallBox-container {
     padding: 0;
     display: flex;
 	width: 250px;
     height: 250px;
     margin: 12px;
+    transition: width, height 0.7s ease-out;
+    position: static;
     
 }
 
@@ -41,12 +45,12 @@
     background-color: #dc143c;
 }
 
-.bed:hover {
-    border: 5px solid #e6e6fa;
+.water:hover {
+    border: 5px solid #25FCF7;
     transform: scale(1.05); 
 }
 .three {
-    background-color: #e6e6fa;
+    background-color: #25FCF7;
 }
 
 .toothbrush:hover {
@@ -57,12 +61,12 @@
     background-color: #C8A2C8;
 }
 
-.water:hover {
-    border: 5px solid #25FCF7;
+.bed:hover {
+    border: 5px solid #e6e6fa;
     transform: scale(1.05); 
 }
 .five {
-    background-color: #25FCF7;
+    background-color: #e6e6fa;
 }
 
 .towel:hover {
@@ -111,6 +115,7 @@
     width: 100%;
     height: 100vh;
     z-index: 4;
+    transition: width 1.5s ease-out;
 }
 
 .boton {
@@ -135,4 +140,18 @@
 
 .show {
     visibility: visible;
+}
+.hide {
+    visibility: hidden;
+}
+.text {
+    position: absolute;
+    z-index: 10;
+    font-size: 120px;
+    right: 100px;
+    top: 45%;
+    font-family: 'Rubik Microbe', cursive;
+    font-weight: bold;
+    font-style: italic;
+    
 }

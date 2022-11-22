@@ -6,7 +6,7 @@ function App() {
 	let [state, setState] = useState(`App`);
 	return (
 		<div className={state}>
-			<BigBox handleBG={setState}></BigBox>
+			<BigBox handleBG={setState} estado={state}></BigBox>
 		</div>
 	);
 }

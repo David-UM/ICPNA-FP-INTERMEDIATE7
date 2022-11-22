@@ -1,8 +1,12 @@
 .App {
-    background-color: aqua;
+    background-color: #fff;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
+    transition: background-color 700ms ease-out;
     display: flex;
+}
+
+.test {
+    background-color: blue;
 }

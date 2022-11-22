@@ -20,45 +20,81 @@
     object-fit: cover;
     z-index: 1;
 }
-
+.BGwhite {
+    background-color: #fff;
+}
 
 
 .computer:hover {
     border: 5px solid #7fff00; 
     transform: scale(1.05); 
 }
+.one {
+    background-color: #7fff00;
+}
+
 .cellphone:hover {
     border: 5px solid #dc143c;
     transform: scale(1.05); 
 }
-.toothbrush:hover {
-    border: 5px solid #C8A2C8;
-    transform: scale(1.05); 
+.two {
+    background-color: #dc143c;
 }
+
 .bed:hover {
     border: 5px solid #e6e6fa;
     transform: scale(1.05); 
 }
+.three {
+    background-color: #e6e6fa;
+}
+
+.toothbrush:hover {
+    border: 5px solid #C8A2C8;
+    transform: scale(1.05); 
+}
+.four {
+    background-color: #C8A2C8;
+}
+
 .water:hover {
     border: 5px solid #25FCF7;
     transform: scale(1.05); 
 }
+.five {
+    background-color: #25FCF7;
+}
+
 .towel:hover {
     border: 5px solid #ee82ee;
     transform: scale(1.05); 
 }
+.six {
+    background-color: #ee82ee;
+}
+
 .plate:hover {
     border: 5px solid #f5f5dc;
     transform: scale(1.05);     
 }
+.seven {
+    background-color: #f5f5dc;
+}
+
 .sandals:hover {
     border: 5px solid #008080;
     transform: scale(1.05); 
+}
+.eight {
+    background-color: #008080;
 }
 
 .clothes:hover {
     border: 5px solid #800020;
     transform: scale(1.05); 
+}
+.nine {
+    background-color: #800020;
 }
 
 .grow {

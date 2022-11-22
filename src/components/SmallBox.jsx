@@ -2,22 +2,30 @@ import { useState } from 'react';
 
 import './../styles/SmallBox.css';
 
-const SmallBox = ({ name, color }) => {
+const SmallBox = ({ name, index, handleBG }) => {
 	let [state, setstate] = useState(`SmallBox ${name}`);
 
 	const handleOnClick = () => {
 		setstate((state = `SmallBox ${name} grow`));
-		() => (document.body.style.backgroundColor = '#faf');
+		handleBG((state = state + ` ${index}`));
 	};
-	console.log();
+
+	const handleColor = () => {
+		handleBG((state = `App ${index}`));
+	};
+
+	const makeWhite = () => {
+		handleBG((state = `App BGwhite`));
+	};
+
 	return (
 		<div className='SmallBox-container'>
 			<img
 				className={state}
 				alt={name}
 				src={`https://raw.githubusercontent.com/David-UM/ICPNA-FP-INTERMEDIATE7/main/src/assets/NineThings/${name}.jpg`}
-				onMouseEnter={() => (document.body.style.backgroundColor = color)}
-				onMouseLeave={() => (document.body.style.backgroundColor = '#fff')}
+				onMouseEnter={handleColor}
+				onMouseLeave={makeWhite}
 				onClick={handleOnClick}
 			/>
 		</div>

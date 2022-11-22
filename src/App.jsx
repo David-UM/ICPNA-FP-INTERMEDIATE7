@@ -3,11 +3,10 @@ import { useState } from 'react';
 import BigBox from './components/BigBox';
 
 function App() {
-	let [state, setstate] = useState(`App`);
-
+	let [state, setState] = useState(`App`);
 	return (
 		<div className={state}>
-			<BigBox></BigBox>
+			<BigBox handleBG={setState}></BigBox>
 		</div>
 	);
 }
